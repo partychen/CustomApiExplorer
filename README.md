@@ -3,7 +3,7 @@
 #replace IApiExplorer
 ```c_sharp
 config.Services.Replace(typeof(IApiExplorer), new CustomApiExplorer(config));
-
+```
 #IApiExplorer with swagger.
 ```c_sharp
 public class CustomApiDescriptionFilter : IApiDescriptionFilter
@@ -18,3 +18,4 @@ public class CustomApiDescriptionFilter : IApiDescriptionFilter
         return apiExplorer.ApiDescriptions;
     }
 }
+```
