@@ -1,10 +1,11 @@
 ### CustomApiExplorer
 
 #replace IApiExplorer
+```c_sharp
 config.Services.Replace(typeof(IApiExplorer), new CustomApiExplorer(config));
 
-```c_sharp
 #IApiExplorer with swagger.
+```c_sharp
 public class CustomApiDescriptionFilter : IApiDescriptionFilter
 {
     public Collection<ApiDescription> Apply(IApiExplorer apiExplorer)
