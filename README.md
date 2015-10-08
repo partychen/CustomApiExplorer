@@ -107,7 +107,7 @@ So we need to overwrite the ApiExplorer's source code.
 ```c_sharp
 config.Services.Replace(typeof(IApiExplorer), new CustomApiExplorer(config));
 ```
-#IApiExplorer with swagger(https://github.com/partychen/Swashbuckle).
+#IApiExplorer with [swagger](https://github.com/partychen/Swashbuckle).
 ```c_sharp
 public class CustomApiDescriptionFilter : IApiDescriptionFilter
 {
